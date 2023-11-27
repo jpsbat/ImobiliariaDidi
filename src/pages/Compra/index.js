@@ -55,6 +55,19 @@ export default function Compra({ navigation }) {
       foto2: fotos.je2,
       foto3: fotos.je3,
       foto4: fotos.je4
+    },
+    {
+      key: 'rayara',
+      nome: 'Residencial Rayara',
+      codigo: 'AP030 Residencial Rayara',
+      descricao: 'Apartamento',
+      preco: 'R$180.000,00',
+      conteudo: 'Apartamento com 2 dormitórios, banheiro social, sala, cozinha, área de serviço, varanda e 1 vaga na garagem. Condomínio fechado',
+      imagem: fotos.rayara,
+      foto1: fotos.r1,
+      foto2: fotos.r2,
+      foto3: fotos.r3,
+      foto4: fotos.r4
     }
   ];
 

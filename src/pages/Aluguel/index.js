@@ -10,7 +10,7 @@ export default function Aluguel({ navigation }) {
       codigo: 'BC054 Centro',
       descricao: 'Sala comercial',
       preco: 'R$850,00',
-      conteudo: 'Sala comercial de 40m² com banheiro em excelente localização no centro.',
+      conteudo: 'Sala comercial com banheiro.',
       imagem: fotos.centro,
       foto1: fotos.c1,
       foto2: fotos.c2,
@@ -55,6 +55,19 @@ export default function Aluguel({ navigation }) {
       foto2: fotos.cm2,
       foto3: fotos.cm3,
       foto4: fotos.cm4
+    },
+    {
+      key: 'bandeirantes',
+      nome: 'Portal Bandeirantes',
+      codigo: 'CA210 Portal Bandeirantes',
+      descricao: 'Casa em Condomínio',
+      preco: 'R$5.000,00',
+      conteudo: 'Casa com 3 dormitórios com 1 suíte com closet, sala de estar e jantar, cozinha americana, área gourmet com churrasqueira, hidromassagem, aquecedor, piscina e pomar. Condomínio fechado.',
+      imagem: fotos.bandeirantes,
+      foto1: fotos.bd1,
+      foto2: fotos.bd2,
+      foto3: fotos.bd3,
+      foto4: fotos.bd4
     }
   ];
 

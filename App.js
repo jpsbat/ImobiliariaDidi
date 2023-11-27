@@ -7,6 +7,7 @@ import Aluguel from './src/pages/Aluguel'
 import InfoCompra from './src/pages/InfoCompra'
 import Compra from './src/pages/Compra'
 import Contato from './src/pages/Contato'
+import Inicio from './src/pages/Inicio'
 
 import Seta from './assets/Seta.png'
 
@@ -26,11 +27,21 @@ function Tabs(){
       <Tab.Navigator
       screenOptions={{
               tabBarStyle: { backgroundColor: '#1C1C1C' },
-              tabBarActiveTintColor: 'gold',
+              tabBarActiveTintColor: '#8C6D0B',
               tabBarInactiveTintColor: 'white',
               headerShown : false
             }}
       >
+      <Tab.Screen name="Inicio" component={Inicio}
+        options={{
+                tabBarLabel: "Início",
+                tabBarIcon: () => (
+                  <Image
+                    style={{ width: 30, height: 30 }}
+                    source={require('./assets/Inicio.png')} />
+                )
+              }}
+        />
         <Tab.Screen name="Compra" component={Compra}
         options={{
                 tabBarLabel: "Compra",
@@ -46,7 +57,7 @@ function Tabs(){
                 tabBarLabel: "Aluguel",
                 tabBarIcon: () => (
                   <Image
-                    style={{ width: 20, height: 30 }}
+                    style={{ width: 30, height: 30 }}
                     source={require('./assets/Aluguel.png')} />
                 )
               }}
@@ -70,7 +81,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Telas" component={Tabs} />
+        <Stack.Screen name="Compra" component={Tabs} />
         <Stack.Screen
           name="Informações"
           component={InfoCompra}

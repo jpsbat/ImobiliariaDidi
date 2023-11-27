@@ -98,9 +98,9 @@ const estilos = StyleSheet.create({
     flex: 1
   },
   logo: {
-    width: 242,
-    height: 117,
-    marginTop: 50
+    width: 222,
+    height: 97,
+    marginTop: 70
   },
   fundo: {
     flex: 1,
