@@ -76,6 +76,9 @@ export default function Compra({ navigation }) {
       <View style={estilos.logoContainer}>
         <Image style={estilos.logo} source={require("../../../assets/Logo.png")} />
       </View>
+
+      <Text style={estilos.titulo}>Imóveis à venda</Text>
+
       <FlatList
         data={data}
         renderItem={({ item }) => (
@@ -141,5 +144,12 @@ const estilos = StyleSheet.create({
     alignItems: "center",
     width: '100%',
     backgroundColor: '#1C1C1C'
+  },
+  titulo: {
+    fontSize: 25,
+    color: '#8C6D0B',
+    fontWeight: 'bold',
+    marginTop: 10,
+    marginBottom: 10
   },
 });
